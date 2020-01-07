@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/nav_username_value"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Welcome Guest"
+        android:paddingTop="36dp"
+        android:textSize="18sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <LinearLayout
+        android:id="@+id/nav_location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#15000000"
+        android:paddingBottom="4dp"
+        android:paddingTop="6dp"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_placeholder"
+            android:contentDescription="none"
+            android:tint="@color/colorPrimaryDark"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/nav_location_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gandhinagar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_edit_location"
+            android:drawableTint="@color/colorGiftBuyButton"
+            tools:ignore="UnusedAttribute" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividerColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/launcher_main"
+            android:layout_marginTop="4dp"
+            android:contentDescription="none" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="18sp"
+                android:text="Home"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="12sp"
+                android:text="Explore the world of Amazing Shopping"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/dividerColor" />
+
+    <Button
+        android:id="@+id/nav_buy_gift_card"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorGiftBuyButton"
+        android:text="@string/menu_gift_card_button_text"
+        android:drawableStart="@drawable/ic_gift_card"
+        android:drawableTint="@android:color/white"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingEnd="8dp"
+        android:textAlignment="textStart"
+        android:drawablePadding="@dimen/activity_vertical_margin"
+        tools:targetApi="m"
+        android:textSize="15sp"
+        android:drawableEnd="@drawable/ic_right_arrow"/>
+    
+</LinearLayout>

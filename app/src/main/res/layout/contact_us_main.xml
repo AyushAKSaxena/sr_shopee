@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/map_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/contact_us_background"
+        android:layout_margin="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/ic_placeholder"
+            android:drawablePadding="16dp"
+            android:text="@string/contact_address"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_email"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:drawableStart="@drawable/ic_contact_mail"
+            android:drawablePadding="16dp"
+            android:layout_marginTop="8dp" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="16dp"
+               android:layout_marginEnd="16dp"
+               android:layout_marginTop="16dp"
+               android:src="@drawable/ic_call"
+               android:tint="@android:color/white"
+               android:contentDescription="@string/properties"
+               />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/contact_number1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/contact_number1"
+                   android:textSize="14sp"
+                   android:layout_marginTop="8dp"
+                   android:textColor="@android:color/white" />
+
+               <TextView
+                   android:id="@+id/contact_number2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/contact_number2"
+                   android:textSize="14sp"
+                   android:textColor="@android:color/white" />
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_timing"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:drawableStart="@drawable/ic_clock"
+            android:drawablePadding="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="40dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

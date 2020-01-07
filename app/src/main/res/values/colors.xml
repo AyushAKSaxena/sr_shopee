@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#023271</color>
+    <color name="colorPrimaryDark">#012C65</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor">#d3cfd8dc</color>
+    <color name="sign_in_background">#ff4081</color>
+    <color name="fb_back">#2961f2</color>
+    <color name="twitter_back">#13aee7</color>
+    <color name="textColorSecondary">#5D5D5D</color>
+    <color name="dangerRed">#b33a3a</color>
+    <color name="dividerColor">#20000000</color>
+    <color name="colorGiftBuyButton">#cf1c53</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+    <color name="contact_us_background">#EE022C65</color>
+    <color name="contact_shadow_start">#BB000000</color>
+    <color name="sell_feature_color">#E7E9EC</color>
+</resources>

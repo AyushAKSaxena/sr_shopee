@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.aboutUsActivity"
+    android:background="@drawable/about_us_gradient_bg">
+
+    <ImageView
+        android:id="@+id/about_us_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="Logo image"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/about_us_main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_us_text"
+        android:layout_below="@+id/about_us_logo"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="2dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/about_us_working_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_us_working_text"
+        android:layout_below="@+id/about_us_main_text"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="2dp"
+        android:textAlignment="center"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_above="@+id/ll_contact_us"
+        android:src="@drawable/about_us_bottom"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/ending" />
+
+    <LinearLayout
+        android:id="@+id/ll_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/fb_connect"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_facebook"
+            android:contentDescription="Facebook logo"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/white_border"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/twitter_connect"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_twitter"
+            android:contentDescription="Twitter logo"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/white_border"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/instagram_connect"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_instagram"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/white_border"
+            android:padding="10dp"
+            android:contentDescription="Instagram Logo" />
+
+    </LinearLayout>
+
+</RelativeLayout>

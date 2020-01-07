@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+
+        <item android:title="Categories">
+            <menu>
+                <item
+                    android:id="@+id/menu_item_store"
+                    android:checked="false"
+                    android:title="Store"
+                    android:icon="@drawable/ic_store" />
+                <item
+                    android:id="@+id/menu_item_services"
+                    android:checked="false"
+                    android:title="Services"
+                    android:icon="@drawable/ic_service" />
+                <item
+                    android:id="@+id/menu_item_properties"
+                    android:checked="false"
+                    android:title="Property"
+                    android:icon="@drawable/ic_property" />
+                <item
+                    android:id="@+id/menu_item_recharge"
+                    android:checked="false"
+                    android:title="Recharge"
+                    android:icon="@drawable/ic_recharge" />
+                <item
+                    android:id="@+id/menu_item_gift_cards"
+                    android:checked="false"
+                    android:title="Gift Cards"
+                    android:icon="@drawable/ic_gift_card" />
+
+            </menu>
+
+        </item>
+
+        <item android:title="Quick Links" >
+            <menu>
+                <item
+                    android:id="@+id/menu_item_login"
+                    android:checked="false"
+                    android:title="Login"
+                    android:icon="@drawable/ic_login" />
+                <item
+                    android:id="@+id/menu_item_website"
+                    android:checked="false"
+                    android:title="Website"
+                    android:icon="@drawable/ic_website" />
+                <item
+                    android:id="@+id/menu_item_about_us"
+                    android:checked="false"
+                    android:title="About us"
+                    android:icon="@drawable/ic_about_us" />
+                <item
+                    android:id="@+id/menu_item_contact_us"
+                    android:checked="false"
+                    android:title="Contact us"
+                    android:icon="@drawable/ic_contact_us" />
+                <item
+                    android:id="@+id/menu_item_terms_and_conditions"
+                    android:title="Terms and Conditions"
+                    android:checked="false"
+                    android:icon="@drawable/ic_terms"/>
+
+            </menu>
+
+        </item>
+
+        <item android:title="Reach Us" >
+            <menu>
+                <item
+                    android:id="@+id/menu_item_facebook"
+                    android:checked="false"
+                    android:title="Follow on Facebook"
+                    android:icon="@drawable/ic_facebook" />
+                <item
+                    android:id="@+id/menu_item_twitter"
+                    android:checked="false"
+                    android:title="Follow on Twitter"
+                    android:icon="@drawable/ic_twitter" />
+                <item
+                    android:id="@+id/menu_item_rate"
+                    android:checked="false"
+                    android:title="Rate out App"
+                    android:icon="@drawable/ic_rate" />
+                <item
+                    android:id="@+id/menu_item_share"
+                    android:checked="false"
+                    android:title="Share out App"
+                    android:icon="@drawable/ic_menu_share" />
+
+            </menu>
+
+        </item>
+    </group>
+
+</menu>

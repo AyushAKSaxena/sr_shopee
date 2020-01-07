@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.PosterDetailsActivity"
+    tools:showIn="@layout/activity_poster_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/poster_main_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="@string/poster_image"
+            android:src="@drawable/gift_card_image"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"/>
+
+        <TextView
+            android:id="@+id/poster_main_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Veer Marbles"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/address"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/poster_main_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/ic_placeholder"
+            android:drawableTint="@color/cardview_dark_background"
+            android:text="Address of the store or property or service"
+            android:drawablePadding="8dp"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cardview_dark_background"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_information"
+            android:textColor="@android:color/black"
+            android:layout_margin="16dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/poster_owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Owner: Prateek Jain"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/poster_owner_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone number: 7567775854"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/poster_owner_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: prateekjain@gmail.com"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/poster_owner_timing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_clock"
+            android:drawableTint="@color/cardview_dark_background"
+            android:text="10am to 12pm Monday to saturday"
+            android:drawablePadding="8dp"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cardview_dark_background"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discount_information"
+            android:textColor="@android:color/black"
+            android:layout_margin="16dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/poster_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="20% discount on any billing with my shopee discount card"
+            android:textColor="@color/dangerRed"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/poster_call_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:text="Call Store"
+            android:drawableStart="@drawable/ic_call"
+            android:drawableTint="@android:color/white"
+            android:background="@drawable/rounded_login_main_button"
+            android:textAlignment="textStart"
+            android:drawablePadding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>
