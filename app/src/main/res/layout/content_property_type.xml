@@ -72,7 +72,7 @@
         android:orientation="vertical"
         android:layout_marginBottom="25dp">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/property_buy_card"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -122,9 +122,9 @@
 
         </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/property_sell_card"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -174,9 +174,9 @@
 
             </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/property_rent_card"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -226,7 +226,7 @@
 
             </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 

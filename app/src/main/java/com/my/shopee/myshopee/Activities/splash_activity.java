@@ -2,16 +2,14 @@ package com.my.shopee.myshopee.Activities;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import com.my.shopee.myshopee.R;
 
@@ -60,7 +58,7 @@ public class splash_activity extends AppCompatActivity {
     }
 
     private void startMainActivity() {
-        Intent mainIntent = new Intent(splash_activity.this,MainActivity.class);
+        Intent mainIntent = new Intent(splash_activity.this,adminPanelActivity.class);
         splash_activity.this.startActivity(mainIntent);
         splash_activity.this.finish();
     }

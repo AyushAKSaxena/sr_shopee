@@ -1,19 +1,15 @@
 package com.my.shopee.myshopee.Utilities;
 
 import android.content.Context;
-import android.location.Address;
-import android.location.Geocoder;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.pixplicity.sharp.Sharp;
 import com.my.shopee.myshopee.R;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
-import java.util.Locale;
 
 import okhttp3.Cache;
 import okhttp3.Call;
