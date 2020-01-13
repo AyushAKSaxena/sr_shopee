@@ -6,10 +6,12 @@
     android:layout_height="match_parent"
     android:gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ONE"
-        android:textSize="36sp"/>
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_view_all_button"
+        android:text="@string/logout" />
 
 </RelativeLayout>
