@@ -119,6 +119,12 @@ public class MainActivity extends AppCompatActivity
 
         if(isLogin) {
             loginLogoutButton.setText(R.string.login_button_text);
+        } else {
+            boolean isAdminLogin = userPreferences.getString("userName", "none").equals("admin");
+            Log.v("username", userPreferences.getString("userName", "none"));
+            if(isAdminLogin) {
+                startAdminActivity();
+            }
         }
 
         giftCard = findViewById(R.id.main_activity_gift_secondary);
@@ -167,6 +173,13 @@ public class MainActivity extends AppCompatActivity
                 posterDetails.putExtra("details", selectedPoster.toString());
             }
         }));
+    }
+
+    private void startAdminActivity() {
+        Intent adminIntent = new Intent(this, AdminPanelActivity.class);
+        adminIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        adminIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(adminIntent);
     }
 
     private void loadPosters() {

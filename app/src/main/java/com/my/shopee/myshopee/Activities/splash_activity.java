@@ -58,7 +58,7 @@ public class splash_activity extends AppCompatActivity {
     }
 
     private void startMainActivity() {
-        Intent mainIntent = new Intent(splash_activity.this,adminPanelActivity.class);
+        Intent mainIntent = new Intent(splash_activity.this, MainActivity.class);
         splash_activity.this.startActivity(mainIntent);
         splash_activity.this.finish();
     }

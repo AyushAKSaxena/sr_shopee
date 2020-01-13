@@ -36,6 +36,7 @@ import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.my.shopee.myshopee.Activities.AdminPanelActivity;
 import com.my.shopee.myshopee.Activities.MainActivity;
 import com.my.shopee.myshopee.R;
 import com.my.shopee.myshopee.Utilities.Constants;
@@ -186,6 +187,17 @@ public class LoginFragment extends Fragment implements OnClickListener {
         String getEmailId = emailid.getText().toString();
         String getPassword = password.getText().toString();
 
+        if (getEmailId.equals("admin") && getPassword.equals("Admin@123")) {
+            SharedPreferences.Editor userDetailsEditor = userDetails.edit();
+            userDetailsEditor.putString("userID", "1");
+            userDetailsEditor.putString("userName", "admin");
+            userDetailsEditor.putString("password", "Admin@123");
+            userDetailsEditor.putString("fullName", "Admin");
+            userDetailsEditor.putString("contactNumber", "7405162148");
+            userDetailsEditor.apply();
+            Toast.makeText(getContext(), "Login Successful", Toast.LENGTH_LONG).show();
+            startAdminActivity();
+        }
         // Check patter for email id
         boolean emailIdMatcher = Patterns.EMAIL_ADDRESS.matcher(getEmailId).matches();
         // Check for both field is empty or not
@@ -199,6 +211,13 @@ public class LoginFragment extends Fragment implements OnClickListener {
             Toast.makeText(getActivity(), "Invalid email", Toast.LENGTH_LONG).show();
         else
             sendLoginRequest();
+    }
+
+    private void startAdminActivity() {
+        Intent loginIntent = new Intent(getActivity(), AdminPanelActivity.class);
+        loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        loginIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(loginIntent);
     }
 
     private void sendLoginRequest() {

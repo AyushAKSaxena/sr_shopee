@@ -146,4 +146,6 @@
     <string name="contact_information">Contact information</string>
     <string name="discount_information">Discount Information</string>
     <string name="title_activity_admin_panel">adminPanelActivity</string>
+    <string name="mobile_number_text">Enter Contact Number</string>
+    <string name="send_otp">Send OTP</string>
 </resources>
