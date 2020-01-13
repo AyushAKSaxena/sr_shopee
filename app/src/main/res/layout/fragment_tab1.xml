@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:background="@drawable/rounded_view_all_button"
-        android:text="@string/logout" />
+        android:text="@string/logout"
+        android:textColor="@color/white_greyish"/>
 
 </RelativeLayout>
