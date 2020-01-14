@@ -4,15 +4,27 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:gravity="center"
+    android:scrollbars="horizontal">
+
+    <ListView
+        android:id="@+id/advertisements_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="41dp"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/logout_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:layout_marginTop="-57dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:background="@drawable/rounded_view_all_button"
         android:text="@string/logout"
-        android:textColor="@color/white_greyish"/>
+        android:textColor="@color/white_greyish"
+        android:layout_below="@+id/advertisements_list"/>
 
 </RelativeLayout>

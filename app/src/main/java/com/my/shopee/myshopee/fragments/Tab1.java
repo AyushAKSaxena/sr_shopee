@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -22,6 +24,8 @@ import com.my.shopee.myshopee.R;
 import com.my.shopee.myshopee.Utilities.Constants;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import static android.content.Context.MODE_PRIVATE;
@@ -31,6 +35,10 @@ public class Tab1 extends Fragment {
     AppCompatButton logoutButton;
     SharedPreferences userPreferences;
     private View view;
+    List<String> your_array_list;
+    ListView listView;
+    ArrayAdapter<String> arrayAdapter;
+
     public Tab1() { }
 
     @Override
@@ -54,6 +62,15 @@ public class Tab1 extends Fragment {
     private void initView() {
         logoutButton = view.findViewById(R.id.logout_button);
         userPreferences = getContext().getSharedPreferences(Constants.userDetailsSharedPreferences, MODE_PRIVATE);
+        your_array_list = new ArrayList<>();
+        your_array_list.add("Greenwoods furniture");
+        your_array_list.add("Aasthi services");
+        your_array_list.add("Bookview publishers");
+        your_array_list.add("Sathi Food Service");
+        your_array_list.add("MyShopee services");
+        listView = view.findViewById(R.id.advertisements_list);
+        arrayAdapter = new ArrayAdapter<String>(Objects.requireNonNull(getContext()), android.R.layout.simple_list_item_1, your_array_list );
+        listView.setAdapter(arrayAdapter);
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -1,11 +1,14 @@
 package com.my.shopee.myshopee.Activities;
 
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -37,10 +40,15 @@ public class AdminPanelActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Tab1(), "List");
-        adapter.addFragment(new Tab2(), "Advertisements");
+        adapter.addFragment(new Tab1(), "Advertisements");
+        adapter.addFragment(new Tab2(), "OTP List");
         adapter.addFragment(new Tab3(), "OTP");
         viewPager.setAdapter(adapter);
+
+        Window window = this.getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
 
         tabLayout.setupWithViewPager(viewPager);
     }
